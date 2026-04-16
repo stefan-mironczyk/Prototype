@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUNG Lufttechnische Anlagen GmbH — Entstaubung · Oberflächentechnik · Wärmerückgewinnung · Kabinenbau</title>
+<meta name="description" content="LUNG GmbH – Entwicklung, Fertigung und Montage lufttechnischer Anlagen seit 1948. Entstaubung, Oberflächentechnik, Wärmerückgewinnung, Kabinenbau. Wallersdorf, Bayern.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":["Organization","LocalBusiness"],"@id":"https://www.lung-gmbh.com/#org","name":"LUNG Lufttechnische Anlagen GmbH","url":"https://www.lung-gmbh.com","logo":"https://www.lung-gmbh.com/logo.png","foundingDate":"1948","description":"Entwicklung, Fertigung und Montage lufttechnischer Anlagen seit 1948. Entstaubungstechnik, Oberflächentechnik, Wärmerückgewinnung, Kabinenbau.","address":{"@type":"PostalAddress","streetAddress":"Haidlfinger Straße 29","addressLocality":"Wallersdorf","postalCode":"94522","addressRegion":"Bayern","addressCountry":"DE"},"telephone":"+49-9933-9532-0","email":"info@lung-gmbh.de"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was macht LUNG Lufttechnische Anlagen GmbH?","acceptedAnswer":{"@type":"Answer","text":"LUNG entwickelt, fertigt und montiert lufttechnische Anlagen für die Industrie — Entstaubungsanlagen, Filteranlagen, Lackierkabinen, Absauganlagen und Wärmerückgewinnungssysteme. Alles aus einer Hand, eigene Fertigung in Wallersdorf, Bayern, seit 1948."}},{"@type":"Question","name":"Für welche Branchen baut LUNG Anlagen?","acceptedAnswer":{"@type":"Answer","text":"Holzverarbeitung, Metallindustrie, Automobil-Zulieferer, Lackier- und Beschichtungsbetriebe, Kunststoff- und Papierverarbeitung."}},{"@type":"Question","name":"Wie viel Energie spart Wärmerückgewinnung von LUNG?","acceptedAnswer":{"@type":"Answer","text":"Bis zu 85 % Rückgewinnungsgrad mit Rotationswärmetauscher. Typische Amortisation: 3–6 Jahre."}},{"@type":"Question","name":"Bietet LUNG Wartung und Service?","acceptedAnswer":{"@type":"Answer","text":"Ja. Wartung, Inspektion, Ersatzteile und Reparatur — auch für Anlagen anderer Hersteller. Deutschlandweiter Service."}},{"@type":"Question","name":"Wo ist LUNG ansässig?","acceptedAnswer":{"@type":"Answer","text":"Firmensitz und Fertigung in 94522 Wallersdorf, Bayern. Projekte deutschlandweit und im angrenzenden Ausland."}}]}]}
+</script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        lung: {
+          950: '#070E1A',
+          900: '#0C1829',
+          800: '#0F1D36',
+          700: '#152B4F',
+          600: '#1B3D6F',
+          500: '#234E8E',
+          400: '#3468AD',
+          300: '#5A8AC5',
+          200: '#93B4DA',
+          100: '#C9D9EC',
+          50:  '#EBF0F7',
+          accent: '#D4511E',
+          accentHover: '#B8441A',
+        }
+      },
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+    }
+  }
+}
+</script>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;color:#1a1a1a;-webkit-font-smoothing:antialiased;}
+.page{display:none}.page.active{display:block}
+
+/* Navigation */
+.nav-link{position:relative;font-size:.875rem;font-weight:500;color:#374151;letter-spacing:-.01em;transition:color .15s}
+.nav-link:hover{color:#1B3D6F}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#1B3D6F;transition:width .2s}
+.nav-link:hover::after{width:100%}
+.dropdown{display:none;position:absolute;top:100%;left:-12px;background:white;border:1px solid #e5e7eb;border-top:2px solid #1B3D6F;box-shadow:0 8px 30px rgba(0,0,0,.12);min-width:260px;z-index:100}
+.dropdown-parent:hover .dropdown{display:block}
+.dropdown a,.dropdown button{display:block;width:100%;text-align:left;padding:.7rem 1.2rem;font-size:.85rem;font-weight:500;color:#374151;transition:all .12s;border:none;background:none;cursor:pointer}
+.dropdown a:hover,.dropdown button:hover{background:#f8fafc;color:#1B3D6F;padding-left:1.5rem}
+
+/* Buttons */
+.btn-cta{background:#D4511E;color:white;padding:.75rem 2rem;font-weight:600;font-size:.875rem;letter-spacing:.01em;transition:background .15s;display:inline-flex;align-items:center;gap:.5rem;border:none;cursor:pointer}
+.btn-cta:hover{background:#B8441A}
+.btn-secondary{background:#1B3D6F;color:white;padding:.75rem 2rem;font-weight:600;font-size:.875rem;letter-spacing:.01em;transition:background .15s;display:inline-flex;align-items:center;gap:.5rem;border:none;cursor:pointer}
+.btn-secondary:hover{background:#152B4F}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.4);color:white;padding:.7rem 1.8rem;font-weight:600;font-size:.875rem;transition:all .15s;display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;background:transparent}
+.btn-ghost:hover{border-color:white;background:rgba(255,255,255,.08)}
+
+/* Section utility */
+.kicker{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#1B3D6F;margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.kicker::before{content:'';width:24px;height:2px;background:#1B3D6F;display:inline-block}
+.kicker.light{color:rgba(255,255,255,.6)}.kicker.light::before{background:rgba(255,255,255,.4)}
+
+/* Industrial card */
+.ind-card{background:white;border:1px solid #e5e7eb;transition:border-color .2s,box-shadow .2s}
+.ind-card:hover{border-color:#1B3D6F;box-shadow:0 4px 20px rgba(27,61,111,.08)}
+
+/* FAQ */
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s}
+.faq-answer.open{max-height:600px;padding-bottom:1.25rem}
+
+/* Misc */
+.img-cover{object-fit:cover;width:100%;height:100%}
+.fade-in{animation:fadeIn .35s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+</style>
+</head>
+
+<body class="bg-white">
+
+<!-- ════════════════════════════════════════════════════════
+     NAVIGATION — Precise, minimal, engineering-grade
+════════════════════════════════════════════════════════ -->
+<header class="sticky top-0 z-50 bg-white border-b border-gray-200" style="backdrop-filter:blur(8px);background:rgba(255,255,255,.97)">
+  <!-- Top micro-bar -->
+  <div class="bg-lung-800 text-white text-xs py-1.5">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-6">
+        <span class="opacity-60">LUNG Lufttechnische Anlagen GmbH · Wallersdorf, Bayern</span>
+      </div>
+      <div class="hidden md:flex items-center gap-5 opacity-70">
+        <a href="tel:+499933953200" class="hover:opacity-100 transition">+49 9933 9532-0</a>
+        <span class="opacity-30">|</span>
+        <a href="mailto:fabian.fischer@lung-gmbh.de" class="hover:opacity-100 transition">fabian.fischer@lung-gmbh.de</a>
+      </div>
+    </div>
+  </div>
+  <!-- Main nav -->
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-16">
+      <button onclick="showPage('home')" class="flex items-center gap-3 focus:outline-none">
+        <img src="images/logo.png" alt="LUNG" class="h-9 object-contain" onerror="this.outerHTML='<span class=\'text-lg font-black tracking-tight text-lung-600\'>LUNG</span>'">
+        <div class="hidden lg:block border-l border-gray-200 pl-3 ml-1">
+          <div class="text-xs text-gray-400 leading-tight font-medium">Lufttechnische Anlagen</div>
+          <div class="text-xs text-gray-400 leading-tight">seit 1948</div>
+        </div>
+      </button>
+      <nav class="hidden lg:flex items-center gap-7">
+        <div class="dropdown-parent relative">
+          <button class="nav-link flex items-center gap-1 py-5">Lösungen <i class="fas fa-chevron-down text-[10px] ml-0.5 opacity-40"></i></button>
+          <div class="dropdown">
+            <button onclick="showPage('entstaubung')">Entstaubungstechnik</button>
+            <button onclick="showPage('oberflaeche')">Oberflächentechnik</button>
+            <button onclick="showPage('waerme')">Wärmerückgewinnung</button>
+            <button onclick="showPage('kabinen')">Kabinenbau</button>
+          </div>
+        </div>
+        <button onclick="showPage('unternehmen')" class="nav-link">Unternehmen</button>
+        <button onclick="showPage('service')" class="nav-link">Service</button>
+        <button onclick="showPage('karriere')" class="nav-link">Karriere</button>
+        <button onclick="showPage('kontakt')" class="nav-link">Kontakt</button>
+      </nav>
+      <button onclick="showPage('kontakt')" class="btn-cta hidden md:inline-flex text-sm">
+        Beratung anfragen <i class="fas fa-arrow-right text-xs"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<!-- ════════════════════════════════════════════════════════
+     HOME
+════════════════════════════════════════════════════════ -->
+<div id="page-home" class="page active fade-in">
+
+  <!-- HERO — Full bleed, industrial image, dark overlay -->
+  <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-lung-900">
+    <!-- Background image -->
+    <div class="absolute inset-0">
+      <img src="images/20231109_140327.jpg"
+           alt="" class="img-cover" onerror="this.src='images/1.jpg'">
+      <div class="absolute inset-0" style="background:linear-gradient(100deg, rgba(12,24,41,.92) 0%, rgba(12,24,41,.75) 45%, rgba(12,24,41,.5) 100%)"></div>
+    </div>
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-24">
+      <div class="max-w-2xl">
+        <div class="kicker light">Lufttechnische Anlagen · Seit 1948</div>
+        <h1 class="text-[3.5rem] leading-[1.05] font-black text-white tracking-tight mb-6">
+          Ausgereifte Technik<br>für saubere Luft.
+        </h1>
+        <p class="text-lg text-gray-300 leading-relaxed mb-10 max-w-lg">
+          Wir entwickeln, fertigen und montieren Absaug-, Filter- und Klimaanlagen für die Industrie. Konstruktion, Stahlbau, Montage, Service — alles im eigenen Haus. Seit über 75 Jahren.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <button onclick="showPage('kontakt')" class="btn-cta py-4 px-8 text-base">
+            Projekt besprechen <i class="fas fa-arrow-right text-sm"></i>
+          </button>
+          <button onclick="showPage('entstaubung')" class="btn-ghost py-4 px-8 text-base">
+            Unsere Lösungen
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Right-side stat badge -->
+    <div class="absolute right-12 bottom-12 hidden xl:block z-10">
+      <div class="grid grid-cols-3 gap-px bg-white/10">
+        <div class="bg-lung-800/80 backdrop-blur px-6 py-5 text-center">
+          <div class="text-3xl font-black text-white">75+</div>
+          <div class="text-[11px] text-gray-400 uppercase tracking-wider mt-0.5">Jahre</div>
+        </div>
+        <div class="bg-lung-800/80 backdrop-blur px-6 py-5 text-center">
+          <div class="text-3xl font-black text-white">100%</div>
+          <div class="text-[11px] text-gray-400 uppercase tracking-wider mt-0.5">Eigenfertigung</div>
+        </div>
+        <div class="bg-lung-800/80 backdrop-blur px-6 py-5 text-center">
+          <div class="text-3xl font-black text-white">D</div>
+          <div class="text-[11px] text-gray-400 uppercase tracking-wider mt-0.5">Bundesweit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP — Horizontal, factual, no fluff -->
+  <section class="bg-lung-600 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-white/10">
+        <div class="py-4 px-4 flex items-center gap-3 text-sm">
+          <i class="fas fa-industry text-white/40"></i>
+          <span class="font-medium">Eigenes Werk in Wallersdorf</span>
+        </div>
+        <div class="py-4 px-4 flex items-center gap-3 text-sm">
+          <i class="fas fa-ruler-combined text-white/40"></i>
+          <span class="font-medium">Maßanfertigung</span>
+        </div>
+        <div class="py-4 px-4 flex items-center gap-3 text-sm">
+          <i class="fas fa-file-shield text-white/40"></i>
+          <span class="font-medium">TA Luft · TRGS · ATEX</span>
+        </div>
+        <div class="py-4 px-4 flex items-center gap-3 text-sm">
+          <i class="fas fa-truck-fast text-white/40"></i>
+          <span class="font-medium">Montage deutschlandweit</span>
+        </div>
+        <div class="py-4 px-4 flex items-center gap-3 text-sm hidden md:flex">
+          <i class="fas fa-headset text-white/40"></i>
+          <span class="font-medium">Service & Wartung</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KOMPETENZFELDER — Structured grid, no soft cards -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-xl mb-14">
+        <div class="kicker">Kompetenzfelder</div>
+        <h2 class="text-3xl font-extrabold text-lung-800 tracking-tight">Vier Bereiche. Eine Quelle.</h2>
+        <p class="mt-3 text-gray-500 leading-relaxed">Von der Absaugung über die Filtration bis zur Wärmerückgewinnung — wir decken die gesamte lufttechnische Prozesskette ab.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-px bg-gray-200">
+        <!-- Entstaubung -->
+        <div onclick="showPage('entstaubung')" class="bg-white p-8 cursor-pointer group hover:bg-lung-50 transition-colors">
+          <div class="flex items-start gap-5">
+            <div class="w-14 h-14 bg-lung-50 border border-lung-100 flex items-center justify-center flex-shrink-0 group-hover:bg-lung-600 group-hover:border-lung-600 transition-colors">
+              <i class="fas fa-wind text-lung-600 text-lg group-hover:text-white transition-colors"></i>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-lung-800 mb-1.5 group-hover:text-lung-600 transition-colors">Entstaubungstechnik</h3>
+              <p class="text-sm text-gray-500 leading-relaxed mb-3">Absaug- und Filteranlagen für Holz-, Metall-, Kunststoff- und Papierstaub. Bunkeraufsatzfilter, Gewebefilter, Containerfilter, Brikettieranlagen.</p>
+              <span class="text-xs font-semibold text-lung-600 uppercase tracking-wider group-hover:tracking-widest transition-all">Details ansehen →</span>
+            </div>
+          </div>
+        </div>
+        <!-- Oberfläche -->
+        <div onclick="showPage('oberflaeche')" class="bg-white p-8 cursor-pointer group hover:bg-lung-50 transition-colors">
+          <div class="flex items-start gap-5">
+            <div class="w-14 h-14 bg-lung-50 border border-lung-100 flex items-center justify-center flex-shrink-0 group-hover:bg-lung-600 group-hover:border-lung-600 transition-colors">
+              <i class="fas fa-spray-can text-lung-600 text-lg group-hover:text-white transition-colors"></i>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-lung-800 mb-1.5 group-hover:text-lung-600 transition-colors">Oberflächentechnik</h3>
+              <p class="text-sm text-gray-500 leading-relaxed mb-3">Spritzkabinen, Trockenspritzwände, Farbnebel-Absaugung. Saubere Luft bei Lackier- und Beschichtungsprozessen.</p>
+              <span class="text-xs font-semibold text-lung-600 uppercase tracking-wider group-hover:tracking-widest transition-all">Details ansehen →</span>
+            </div>
+          </div>
+        </div>
+        <!-- Wärme -->
+        <div onclick="showPage('waerme')" class="bg-white p-8 cursor-pointer group hover:bg-lung-50 transition-colors">
+          <div class="flex items-start gap-5">
+            <div class="w-14 h-14 bg-lung-50 border border-lung-100 flex items-center justify-center flex-shrink-0 group-hover:bg-lung-600 group-hover:border-lung-600 transition-colors">
+              <i class="fas fa-fire-flame-curved text-lung-600 text-lg group-hover:text-white transition-colors"></i>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-lung-800 mb-1.5 group-hover:text-lung-600 transition-colors">Wärmerückgewinnung</h3>
+              <p class="text-sm text-gray-500 leading-relaxed mb-3">Rotationswärmetauscher mit bis zu 85 % Rückgewinnungsgrad. Heizenergie sparen, CO₂ reduzieren, Amortisation in 3–6 Jahren.</p>
+              <span class="text-xs font-semibold text-lung-600 uppercase tracking-wider group-hover:tracking-widest transition-all">Details ansehen →</span>
+            </div>
+          </div>
+        </div>
+        <!-- Kabinen -->
+        <div onclick="showPage('kabinen')" class="bg-white p-8 cursor-pointer group hover:bg-lung-50 transition-colors">
+          <div class="flex items-start gap-5">
+            <div class="w-14 h-14 bg-lung-50 border border-lung-100 flex items-center justify-center flex-shrink-0 group-hover:bg-lung-600 group-hover:border-lung-600 transition-colors">
+              <i class="fas fa-warehouse text-lung-600 text-lg group-hover:text-white transition-colors"></i>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-lung-800 mb-1.5 group-hover:text-lung-600 transition-colors">Kabinenbau</h3>
+              <p class="text-sm text-gray-500 leading-relaxed mb-3">Schallschutz-, Lackier- und Sonderkabinen aus Sandwichpaneel. Individuell konstruiert und gefertigt in Wallersdorf.</p>
+              <span class="text-xs font-semibold text-lung-600 uppercase tracking-wider group-hover:tracking-widest transition-all">Details ansehen →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-STEP PROCESS — Linear, technical, precise -->
+  <section class="py-20 bg-lung-50 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-xl mb-14">
+        <div class="kicker">Unser Prozess</div>
+        <h2 class="text-3xl font-extrabold text-lung-800 tracking-tight">Von der Anfrage bis zum laufenden Betrieb</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-0">
+        <div class="relative p-6 border-l-2 border-lung-600 md:border-l-0 md:border-t-2">
+          <div class="text-xs font-bold text-lung-400 mb-2">01</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-1">Analyse & Beratung</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Prozess verstehen, Normen prüfen, Anforderungen definieren.</p>
+        </div>
+        <div class="relative p-6 border-l-2 border-lung-600 md:border-l-0 md:border-t-2">
+          <div class="text-xs font-bold text-lung-400 mb-2">02</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-1">Konstruktion & Auslegung</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">CAD-Planung, Dimensionierung, Materialwahl durch eigene Konstrukteure.</p>
+        </div>
+        <div class="relative p-6 border-l-2 border-lung-600 md:border-l-0 md:border-t-2">
+          <div class="text-xs font-bold text-lung-400 mb-2">03</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-1">Fertigung im eigenen Werk</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Stahlbau, Blechbearbeitung, Schweißen — in Wallersdorf unter voller Qualitätskontrolle.</p>
+        </div>
+        <div class="relative p-6 border-l-2 border-lung-600 md:border-l-0 md:border-t-2">
+          <div class="text-xs font-bold text-lung-400 mb-2">04</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-1">Montage & Inbetriebnahme</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Installation durch eigene Monteure, deutschlandweit. Einweisung des Bedienpersonals.</p>
+        </div>
+        <div class="relative p-6 border-l-2 border-lung-accent md:border-l-0 md:border-t-2 md:border-lung-accent">
+          <div class="text-xs font-bold text-lung-accent mb-2">05</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-1">Wartung & Service</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Regelmäßige Inspektion, Ersatzteile, Notfallservice — für langen, störungsfreien Betrieb.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT — Image + facts, engineering authority -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-5 gap-0">
+        <!-- Image -->
+        <div class="lg:col-span-2 relative overflow-hidden min-h-[400px]">
+          <img src="images/4.jpg"
+               alt="LUNG Fertigungshalle" class="img-cover" onerror="this.parentElement.style.background='#1B3D6F'">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-lung-900/80 to-transparent p-6">
+            <div class="text-white font-bold text-sm">Fertigung in Wallersdorf, Bayern</div>
+          </div>
+        </div>
+        <!-- Text -->
+        <div class="lg:col-span-3 p-10 lg:p-14 bg-lung-50 border border-gray-200 border-l-0">
+          <div class="kicker">Über LUNG</div>
+          <h2 class="text-3xl font-extrabold text-lung-800 tracking-tight mb-5">Seit 1948. Eigene Fertigung. Null Kompromisse.</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Was als klassischer Anlagenbauer in Niederbayern begann, ist heute ein verlässlicher Partner für mittelständische Industriebetriebe in ganz Deutschland. LUNG steht für eine Sache: Alles aus einer Hand — von der Auslegung über den Stahlbau bis zur Inbetriebnahme. Ohne Subunternehmer, ohne Qualitätsverluste an Schnittstellen.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Unter der Führung von Geschäftsführer Fabian L. Fischer, staatlich geprüfter Techniker, verbindet LUNG solides Handwerk mit moderner Konstruktionstechnik.
+          </p>
+          <div class="grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
+            <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600 flex-shrink-0"></div>Eigenes Werk in Wallersdorf</div>
+            <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600 flex-shrink-0"></div>Konstruktion bis Service</div>
+            <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600 flex-shrink-0"></div>Normkonform nach TA Luft</div>
+            <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600 flex-shrink-0"></div>Deutschlandweite Montage</div>
+          </div>
+          <div class="mt-8">
+            <button onclick="showPage('unternehmen')" class="btn-secondary text-sm">Mehr über LUNG <i class="fas fa-arrow-right text-xs"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENZEN — Grid, factual, no fluff -->
+  <section class="py-20 bg-lung-50 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-end mb-12">
+        <div>
+          <div class="kicker">Referenzen</div>
+          <h2 class="text-3xl font-extrabold text-lung-800 tracking-tight">Realisierte Projekte</h2>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-px bg-gray-200">
+        <div onclick="showPage('kontakt')" class="bg-white group cursor-pointer">
+          <div class="h-56 overflow-hidden">
+            <img src="images/20240902_151048.jpg"
+                 alt="Referenz Automotive" class="img-cover group-hover:scale-[1.03] transition-transform duration-500"
+                 onerror="this.parentElement.style.background='#234E8E'">
+          </div>
+          <div class="p-5">
+            <div class="text-[11px] font-bold text-lung-400 uppercase tracking-widest mb-1">Automobilindustrie</div>
+            <h3 class="font-bold text-lung-800 text-sm">Entstaubungsanlage für industrielle Bearbeitung</h3>
+            <p class="text-xs text-gray-400 mt-1">Filteranlage · Absaugung · Montage</p>
+          </div>
+        </div>
+        <div onclick="showPage('kontakt')" class="bg-white group cursor-pointer">
+          <div class="h-56 overflow-hidden">
+            <img src="images/20240902_130437.jpg"
+                 alt="Referenz Holzverarbeitung" class="img-cover group-hover:scale-[1.03] transition-transform duration-500"
+                 onerror="this.parentElement.style.background='#234E8E'">
+          </div>
+          <div class="p-5">
+            <div class="text-[11px] font-bold text-lung-400 uppercase tracking-widest mb-1">Holzverarbeitung</div>
+            <h3 class="font-bold text-lung-800 text-sm">Zentralabsaugung mit Brikettierung</h3>
+            <p class="text-xs text-gray-400 mt-1">Gewebefilter · Brikettieranlage · Rohrleitung</p>
+          </div>
+        </div>
+        <div onclick="showPage('kontakt')" class="bg-white group cursor-pointer">
+          <div class="h-56 overflow-hidden">
+            <img src="images/Schallschutzkabine mit Lüftungstechnik.jpg"
+                 alt="Referenz Kabinenbau" class="img-cover group-hover:scale-[1.03] transition-transform duration-500"
+                 onerror="this.parentElement.style.background='#234E8E'">
+          </div>
+          <div class="p-5">
+            <div class="text-[11px] font-bold text-lung-400 uppercase tracking-widest mb-1">Kabinenbau</div>
+            <h3 class="font-bold text-lung-800 text-sm">Schallschutzkabine mit integrierter Lüftung</h3>
+            <p class="text-xs text-gray-400 mt-1">Kabine · Lüftungstechnik · Schallschutz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ — Technical, clean -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="mb-12">
+        <div class="kicker">Häufige Fragen</div>
+        <h2 class="text-3xl font-extrabold text-lung-800 tracking-tight">Was Kunden wissen wollen</h2>
+      </div>
+      <div class="divide-y divide-gray-200 border-y border-gray-200">
+        <div>
+          <button class="faq-toggle w-full flex justify-between items-center py-5 text-left text-sm font-semibold text-lung-800 hover:text-lung-600 transition-colors" onclick="toggleFaq(this)">
+            Was macht LUNG Lufttechnische Anlagen GmbH?
+            <i class="fas fa-plus text-xs text-gray-400 flex-shrink-0 ml-6 transition-transform"></i>
+          </button>
+          <div class="faq-answer text-sm text-gray-500 leading-relaxed px-0">
+            LUNG entwickelt, fertigt und montiert lufttechnische Anlagen für die Industrie — Entstaubungs- und Filteranlagen, Lackierkabinen, Absauganlagen und Wärmerückgewinnungssysteme. Konstruktion, Fertigung und Montage erfolgen im eigenen Werk in Wallersdorf, Bayern. Seit 1948.
+          </div>
+        </div>
+        <div>
+          <button class="faq-toggle w-full flex justify-between items-center py-5 text-left text-sm font-semibold text-lung-800 hover:text-lung-600 transition-colors" onclick="toggleFaq(this)">
+            Für welche Branchen baut LUNG Anlagen?
+            <i class="fas fa-plus text-xs text-gray-400 flex-shrink-0 ml-6"></i>
+          </button>
+          <div class="faq-answer text-sm text-gray-500 leading-relaxed">
+            Holzverarbeitende Industrie (Sägewerke, Zimmereien, Möbelhersteller), Metallindustrie (Schleifen, Schweißen, Fräsen), Automobil-Zulieferer, Lackier- und Beschichtungsbetriebe, Kunststoff- und Papierverarbeitung.
+          </div>
+        </div>
+        <div>
+          <button class="faq-toggle w-full flex justify-between items-center py-5 text-left text-sm font-semibold text-lung-800 hover:text-lung-600 transition-colors" onclick="toggleFaq(this)">
+            Wie viel Energie spart eine Wärmerückgewinnung?
+            <i class="fas fa-plus text-xs text-gray-400 flex-shrink-0 ml-6"></i>
+          </button>
+          <div class="faq-answer text-sm text-gray-500 leading-relaxed">
+            LUNG-Systeme mit Rotationswärmetauscher erreichen Rückgewinnungsgrade bis 85 %. Typische Amortisationszeit: 3–6 Jahre. Kostenloser Energiecheck auf Anfrage.
+          </div>
+        </div>
+        <div>
+          <button class="faq-toggle w-full flex justify-between items-center py-5 text-left text-sm font-semibold text-lung-800 hover:text-lung-600 transition-colors" onclick="toggleFaq(this)">
+            Liefert und montiert LUNG auch außerhalb Bayerns?
+            <i class="fas fa-plus text-xs text-gray-400 flex-shrink-0 ml-6"></i>
+          </button>
+          <div class="faq-answer text-sm text-gray-500 leading-relaxed">
+            Ja. Planung, Montage und Service deutschlandweit und im angrenzenden europäischen Ausland — durch eigene Montageteams.
+          </div>
+        </div>
+        <div>
+          <button class="faq-toggle w-full flex justify-between items-center py-5 text-left text-sm font-semibold text-lung-800 hover:text-lung-600 transition-colors" onclick="toggleFaq(this)">
+            Bietet LUNG auch Wartung für Fremdanlagen?
+            <i class="fas fa-plus text-xs text-gray-400 flex-shrink-0 ml-6"></i>
+          </button>
+          <div class="faq-answer text-sm text-gray-500 leading-relaxed">
+            Ja. Wartung, Inspektion, Filterwechsel, Ersatzteile und Reparatur — auch für Anlagen anderer Hersteller.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA — Direct, authoritative -->
+  <section class="bg-lung-800 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div>
+          <h2 class="text-2xl font-extrabold text-white tracking-tight">Projekt besprechen?</h2>
+          <p class="text-lung-200 mt-1">Kostenlose Erstberatung. Direkt mit unseren Technikern.</p>
+        </div>
+        <div class="flex gap-3 flex-shrink-0">
+          <button onclick="showPage('kontakt')" class="btn-cta py-3.5 px-7">
+            Anfrage senden <i class="fas fa-arrow-right text-xs"></i>
+          </button>
+          <a href="tel:+499933953200" class="btn-ghost py-3.5 px-7">
+            <i class="fas fa-phone text-xs"></i> +49 9933 9532-0
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     ENTSTAUBUNGSTECHNIK
+════════════════════════════════════════════════════════ -->
+<div id="page-entstaubung" class="page fade-in">
+  <section class="relative bg-lung-900 py-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <img src="images/1.jpg" alt="" class="img-cover">
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+      <div class="text-xs text-lung-300 mb-4"><button onclick="showPage('home')" class="hover:text-white transition">Startseite</button> <span class="mx-1 opacity-40">/</span> Lösungen <span class="mx-1 opacity-40">/</span> Entstaubungstechnik</div>
+      <h1 class="text-4xl font-black text-white tracking-tight mb-4 max-w-2xl">Entstaubungstechnik</h1>
+      <p class="text-lg text-lung-200 max-w-lg mb-8">Absaug- und Filteranlagen für Holz, Metall, Kunststoff — normkonform nach TA Luft, TRGS 553, ATEX.</p>
+      <button onclick="showPage('kontakt')" class="btn-cta">Anlage anfragen <i class="fas fa-arrow-right text-xs"></i></button>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-5 gap-12">
+      <div class="lg:col-span-3">
+        <div class="kicker">Was ist Entstaubungstechnik?</div>
+        <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-4">Stäube an der Quelle erfassen — bevor sie schaden</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">Entstaubungsanlagen erfassen Staub, Späne, Rauch und Feinpartikel direkt an der Entstehungsquelle. Eine korrekt dimensionierte Anlage schützt die Gesundheit der Mitarbeitenden, erfüllt die einschlägigen Normen (TA Luft, TRGS 553, ATEX) und vermeidet Ablagerungen auf Maschinen und Gebäude.</p>
+        <p class="text-gray-600 leading-relaxed mb-6">LUNG baut Absaug- und Filteranlagen seit über 75 Jahren — exakt abgestimmt auf den jeweiligen Prozess, Volumenstrom und Staubtyp. Von kompakten Bunkeraufsatzfiltern bis zu zentralen Großfilteranlagen mit Brikettierung.</p>
+        <h3 class="font-bold text-lung-800 text-sm mb-3 mt-8">Typische Einsatzbereiche</h3>
+        <div class="grid grid-cols-2 gap-2 text-sm text-gray-600">
+          <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Holz- und Sägespäne</div>
+          <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Schweißrauch und Metallstaub</div>
+          <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Kunststoff- und Papierstaub</div>
+          <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Öl- und Kühlmittelnebel</div>
+          <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Schleif- und Polierstaub</div>
+          <div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Textil- und Faserstaub</div>
+        </div>
+      </div>
+      <div class="lg:col-span-2">
+        <img src="images/1.jpg" alt="LUNG Filteranlage" class="w-full h-80 object-cover" onerror="this.style.background='#1B3D6F'">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-lung-50 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="kicker mb-3">Produkte</div>
+      <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-10">Das richtige System für jeden Prozess</h2>
+      <div class="grid md:grid-cols-3 gap-px bg-gray-200">
+        <div class="bg-white p-6">
+          <div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Filtration</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Bunkeraufsatzfilter (BAF-T)</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Kompaktfilter direkt auf dem Entsorgungsbehälter. Ideal für mittlere Staubmengen, platzsparend und einfach zu entleeren.</p>
+        </div>
+        <div class="bg-white p-6">
+          <div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Filtration</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Gewebefilter (GF-Serie)</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Hochleistungsfilter für große Volumenströme und feinste Stäube. Automatische Druckstoßreinigung.</p>
+        </div>
+        <div class="bg-white p-6">
+          <div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Mobil</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Containerfilter (CONTAIN)</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Selbsttragende Filteranlage im Container. Sofort einsatzbereit, flexibel aufstellbar.</p>
+        </div>
+        <div class="bg-white p-6">
+          <div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Entsorgung</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Brikettieranlage (BRIK30)</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Span-Brikettierung direkt nach dem Filter. Reduziert Entsorgungsvolumen um bis zu 90 %.</p>
+        </div>
+        <div class="bg-white p-6">
+          <div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Antrieb</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Radialventilatoren</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Passend dimensioniert. Verschiedene Bauarten für Staub, Späne, Ex-Bereiche.</p>
+        </div>
+        <div class="bg-white p-6">
+          <div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Infrastruktur</div>
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Rohr- & Kanalbau</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Staubgerechte Luftleitungen — eigengefertigt, minimale Druckverluste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-lung-800 py-14">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div><h2 class="text-xl font-extrabold text-white tracking-tight">Entstaubungslösung für Ihren Betrieb?</h2><p class="text-lung-200 text-sm mt-1">Kostenlose Auslegung nach Ihren Prozessdaten — unverbindlich.</p></div>
+      <button onclick="showPage('kontakt')" class="btn-cta flex-shrink-0">Jetzt anfragen <i class="fas fa-arrow-right text-xs"></i></button>
+    </div>
+  </section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     OBERFLÄCHENTECHNIK
+════════════════════════════════════════════════════════ -->
+<div id="page-oberflaeche" class="page fade-in">
+  <section class="relative bg-lung-900 py-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-20"><img src="images/20221130_143430.jpg" alt="" class="img-cover"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+      <div class="text-xs text-lung-300 mb-4"><button onclick="showPage('home')" class="hover:text-white">Startseite</button> <span class="mx-1 opacity-40">/</span> Lösungen <span class="mx-1 opacity-40">/</span> Oberflächentechnik</div>
+      <h1 class="text-4xl font-black text-white tracking-tight mb-4 max-w-2xl">Oberflächentechnik</h1>
+      <p class="text-lg text-lung-200 max-w-lg mb-8">Spritzkabinen, Trockenspritzwände und Farbnebel-Absaugung für sichere Beschichtungsprozesse.</p>
+      <button onclick="showPage('kontakt')" class="btn-cta">Anlage anfragen <i class="fas fa-arrow-right text-xs"></i></button>
+    </div>
+  </section>
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <div class="kicker">Oberflächentechnik von LUNG</div>
+        <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-4">Saubere Luft bei Lackier- und Spritzprozessen</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">Farbnebel, Lösemitteldämpfe und Overspray gehören zu den kritischsten Luftverunreinigungen in der Industrie — gesundheitlich und brandschutztechnisch. LUNG dimensioniert und baut Absaug- und Kabinenlösungen exakt auf Ihren Spritz- oder Lackierprozess abgestimmt.</p>
+        <p class="text-gray-600 leading-relaxed">Ob offene Absaugwand, kompakte Spritzbox oder geschlossene Kabine mit Zu-/Ablufttechnik: Normkonform nach VdS und BGR 231.</p>
+      </div>
+      <img src="images/20221130_143430.jpg" alt="Absaugspritzbox" class="w-full h-72 object-cover" onerror="this.style.background='#1B3D6F'">
+    </div>
+  </section>
+  <section class="py-16 bg-lung-50 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-10">Produkte für die Oberflächentechnik</h2>
+      <div class="grid md:grid-cols-3 gap-px bg-gray-200">
+        <div class="bg-white p-6">
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Absaugspritzbox (ASB-SW)</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Kompakte Absaugeinheit für kleine und mittlere Spritzarbeiten. Sofort aufstellbereit, effektiv.</p>
+        </div>
+        <div class="bg-white p-6">
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Trockenspritzwand (SW)</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Wandmontierte Absaugwand mit Filtermodulen. Ideal für Serienbeschichtung oder wechselnde Werkstücke.</p>
+        </div>
+        <div class="bg-white p-6">
+          <h3 class="font-bold text-lung-800 text-sm mb-2">Spritzkabinen</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Vollständige Kabinen mit Zu-/Ablufttechnik, Beleuchtung und Druckregelung nach VdS/BGR.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-lung-800 py-14"><div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6"><div><h2 class="text-xl font-extrabold text-white tracking-tight">Die richtige Lösung für Ihre Beschichtungsprozesse</h2><p class="text-lung-200 text-sm mt-1">Wir dimensionieren kostenlos.</p></div><button onclick="showPage('kontakt')" class="btn-cta flex-shrink-0">Jetzt anfragen <i class="fas fa-arrow-right text-xs"></i></button></div></section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     WÄRMERÜCKGEWINNUNG
+════════════════════════════════════════════════════════ -->
+<div id="page-waerme" class="page fade-in">
+  <section class="relative bg-lung-900 py-20"><div class="relative z-10 max-w-7xl mx-auto px-6">
+    <div class="text-xs text-lung-300 mb-4"><button onclick="showPage('home')" class="hover:text-white">Startseite</button> <span class="mx-1 opacity-40">/</span> Lösungen <span class="mx-1 opacity-40">/</span> Wärmerückgewinnung</div>
+    <h1 class="text-4xl font-black text-white tracking-tight mb-4 max-w-2xl">Wärmerückgewinnung</h1>
+    <p class="text-lg text-lung-200 max-w-lg mb-8">Bis zu 85 % der Abwärme aus Ihrer Abluft zurückgewinnen — für sinkende Heizkosten und nachhaltigere Produktion.</p>
+    <button onclick="showPage('kontakt')" class="btn-cta">Energieberatung anfragen <i class="fas fa-arrow-right text-xs"></i></button>
+  </div></section>
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <div class="kicker">Was ist Wärmerückgewinnung?</div>
+        <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-4">Wärme nutzen statt verschwenden</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">In Produktionshallen wird ständig warme Luft abgesaugt — aus Entstaubungsanlagen, Lackierkabinen, Trockenkammern. Diese Wärmeenergie entweicht bei herkömmlichen Anlagen ungenutzt ins Freie.</p>
+        <p class="text-gray-600 leading-relaxed mb-6">LUNG integriert Wärmerückgewinnung direkt in die Zu- und Ablufttechnik. Ein Rotationswärmetauscher überträgt die Wärme von der Abluft auf die frische Zuluft — ohne Mischung der Luftströme.</p>
+        <div class="bg-lung-50 border-l-2 border-lung-600 p-5">
+          <div class="text-3xl font-black text-lung-600">≤ 85 %</div>
+          <div class="text-sm font-semibold text-lung-800">Wärmerückgewinnungsgrad</div>
+          <div class="text-xs text-gray-500 mt-1">Amortisation: 3–6 Jahre</div>
+        </div>
+      </div>
+      <img src="images/WRG_Dach.jpg" alt="WRG" class="w-full h-72 object-cover" onerror="this.style.background='#1B3D6F'">
+    </div>
+  </section>
+  <section class="py-16 bg-lung-50 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-px bg-gray-200">
+      <div class="bg-white p-8 text-center"><div class="text-sm font-bold text-lung-800 mb-2">Heizkosten senken</div><p class="text-xs text-gray-500">Zuluft bereits vorgewärmt — weniger Heizenergie nötig.</p></div>
+      <div class="bg-white p-8 text-center"><div class="text-sm font-bold text-lung-800 mb-2">CO₂ reduzieren</div><p class="text-xs text-gray-500">Weniger Energieverbrauch = weniger Emissionen.</p></div>
+      <div class="bg-white p-8 text-center"><div class="text-sm font-bold text-lung-800 mb-2">Behaglichkeit erhöhen</div><p class="text-xs text-gray-500">Gleichmäßig temperierte Zuluft verhindert Zugluft.</p></div>
+    </div>
+  </section>
+  <section class="bg-lung-800 py-14"><div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6"><div><h2 class="text-xl font-extrabold text-white tracking-tight">Wie viel Energie könnten Sie sparen?</h2><p class="text-lung-200 text-sm mt-1">Kostenloser Energiecheck — unverbindlich.</p></div><button onclick="showPage('kontakt')" class="btn-cta flex-shrink-0">Energiecheck anfragen <i class="fas fa-arrow-right text-xs"></i></button></div></section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     KABINENBAU
+════════════════════════════════════════════════════════ -->
+<div id="page-kabinen" class="page fade-in">
+  <section class="relative bg-lung-900 py-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-20"><img src="images/Schallschutzkabine.jpg" alt="" class="img-cover"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+      <div class="text-xs text-lung-300 mb-4"><button onclick="showPage('home')" class="hover:text-white">Startseite</button> <span class="mx-1 opacity-40">/</span> Lösungen <span class="mx-1 opacity-40">/</span> Kabinenbau</div>
+      <h1 class="text-4xl font-black text-white tracking-tight mb-4 max-w-2xl">Kabinenbau</h1>
+      <p class="text-lg text-lung-200 max-w-lg mb-8">Schallschutz-, Lackier- und Sonderkabinen aus Sandwichpaneel — konstruiert und gefertigt in Wallersdorf.</p>
+      <button onclick="showPage('kontakt')" class="btn-cta">Kabine anfragen <i class="fas fa-arrow-right text-xs"></i></button>
+    </div>
+  </section>
+  <section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+    <div>
+      <div class="kicker">Kabinenbau von LUNG</div>
+      <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-4">Mehr als vier Wände</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">Eine LUNG-Kabine ist kein Katalogprodukt. Stahl, Sandwichpaneel, Türen, Beleuchtung, Lüftung — alles wird im eigenen Werk produziert. Lüftungs- und Absaugtechnik direkt integriert: eine Anlage, ein Ansprechpartner.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-1">
+      <img src="images/Schallschutzkabine.jpg" alt="" class="h-44 w-full object-cover" onerror="this.style.background='#234E8E'">
+      <img src="images/Trocknungskabinen aus Sandwichpaneel.jpg" alt="" class="h-44 w-full object-cover" onerror="this.style.background='#152B4F'">
+      <img src="images/Schallschutzkabine mit Lüftungstechnik.jpg" alt="" class="h-44 w-full object-cover" onerror="this.style.background='#3468AD'">
+      <img src="images/Zuluftdecke 20.000m³h .jpg" alt="" class="h-44 w-full object-cover" onerror="this.style.background='#1B3D6F'">
+    </div>
+  </div></section>
+  <section class="py-16 bg-lung-50 border-y border-gray-200"><div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-px bg-gray-200">
+    <div class="bg-white p-6"><h3 class="font-bold text-lung-800 text-sm mb-2">Schallschutzkabinen</h3><p class="text-xs text-gray-500 leading-relaxed">Lärmschutz nach Maß. Integrierte Lüftung, DGUV-konform.</p></div>
+    <div class="bg-white p-6"><h3 class="font-bold text-lung-800 text-sm mb-2">Lackier- & Trocknungskabinen</h3><p class="text-xs text-gray-500 leading-relaxed">Zu-/Abluft mit WRG. Gleichmäßige Luftverteilung für perfekte Beschichtung.</p></div>
+    <div class="bg-white p-6"><h3 class="font-bold text-lung-800 text-sm mb-2">Sonderkabinen</h3><p class="text-xs text-gray-500 leading-relaxed">Reinraum, Prüfkabinen, Einhausungen — nach Ihren Anforderungen.</p></div>
+  </div></section>
+  <section class="bg-lung-800 py-14"><div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6"><div><h2 class="text-xl font-extrabold text-white tracking-tight">Ihre Kabine. Nach Ihren Maßen.</h2></div><button onclick="showPage('kontakt')" class="btn-cta flex-shrink-0">Kabine anfragen <i class="fas fa-arrow-right text-xs"></i></button></div></section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     UNTERNEHMEN
+════════════════════════════════════════════════════════ -->
+<div id="page-unternehmen" class="page fade-in">
+  <section class="bg-lung-900 py-20"><div class="max-w-7xl mx-auto px-6"><h1 class="text-4xl font-black text-white tracking-tight mb-4">LUNG — Seit 1948</h1><p class="text-lg text-lung-200 max-w-lg">Familiengeführt, ingenieurgetrieben, verlässlich.</p></div></section>
+  <section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <div class="kicker">Über uns</div>
+      <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-5">Tradition mit Bodenhaftung</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">1948 in Wallersdorf gegründet, ist LUNG Lufttechnische Anlagen GmbH ein fester Name für maßgefertigte Absaug-, Filter- und Klimatechnik in der deutschen Industrie. Über 75 Jahre, eine Linie: Alles aus einer Hand.</p>
+      <p class="text-gray-600 leading-relaxed mb-6">Unter der Führung von Geschäftsführer Fabian L. Fischer, staatlich geprüfter Techniker, verbindet LUNG klassisches Handwerk mit modernem Ingenieur-Know-how. Das Ergebnis: Anlagen, die jahrzehntelang zuverlässig laufen.</p>
+      <div class="grid grid-cols-2 gap-2 text-sm"><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Eigenes Werk, Wallersdorf</div><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Planung bis Service</div><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>TA Luft · TRGS · ATEX</div><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Montage deutschlandweit</div></div>
+    </div>
+    <img src="images/2.jpg" alt="LUNG" class="w-full h-80 object-cover" onerror="this.style.background='#1B3D6F'">
+  </div></section>
+  <section class="py-16 bg-lung-50 border-y border-gray-200"><div class="max-w-4xl mx-auto px-6">
+    <div class="kicker text-center justify-center mb-3">Geschichte</div>
+    <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight text-center mb-12">Meilensteine</h2>
+    <div class="space-y-6">
+      <div class="flex gap-4"><div class="w-16 text-right text-sm font-bold text-lung-600 flex-shrink-0 pt-0.5">1948</div><div class="w-px bg-lung-200 flex-shrink-0"></div><div><div class="text-sm font-bold text-lung-800">Gründung in Wallersdorf</div><p class="text-xs text-gray-500">Aufbau als Spezialist für lufttechnische Anlagen.</p></div></div>
+      <div class="flex gap-4"><div class="w-16 text-right text-sm font-bold text-lung-600 flex-shrink-0 pt-0.5">1970er</div><div class="w-px bg-lung-200 flex-shrink-0"></div><div><div class="text-sm font-bold text-lung-800">Fokus Entstaubung</div><p class="text-xs text-gray-500">Spezialisierung auf Filteranlagen für Holz- und Metallindustrie.</p></div></div>
+      <div class="flex gap-4"><div class="w-16 text-right text-sm font-bold text-lung-600 flex-shrink-0 pt-0.5">1990er</div><div class="w-px bg-lung-200 flex-shrink-0"></div><div><div class="text-sm font-bold text-lung-800">Ausbau Oberflächentechnik</div><p class="text-xs text-gray-500">Spritzkabinen, Lackieranlagen und Farbnebel-Absaugung.</p></div></div>
+      <div class="flex gap-4"><div class="w-16 text-right text-sm font-bold text-lung-600 flex-shrink-0 pt-0.5">2023</div><div class="w-px bg-lung-200 flex-shrink-0"></div><div><div class="text-sm font-bold text-lung-800">75 Jahre LUNG</div><p class="text-xs text-gray-500">Drei Generationen, ein Anspruch: Saubere Luft für die Industrie.</p></div></div>
+      <div class="flex gap-4"><div class="w-16 text-right text-sm font-bold text-lung-accent flex-shrink-0 pt-0.5">2026</div><div class="w-px bg-lung-accent flex-shrink-0"></div><div><div class="text-sm font-bold text-lung-800">Digitaler Neustart</div><p class="text-xs text-gray-500">Neuer Webauftritt, neue Datenblätter, digitale Auffindbarkeit.</p></div></div>
+    </div>
+  </div></section>
+  <section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-10">Werte</h2>
+    <div class="grid md:grid-cols-4 gap-px bg-gray-200 border border-gray-200"><div class="bg-white p-6"><div class="font-bold text-lung-800 text-sm mb-1">Qualität</div><p class="text-xs text-gray-500">Kein Kompromiss bei Material und Ausführung.</p></div><div class="bg-white p-6"><div class="font-bold text-lung-800 text-sm mb-1">Verlässlichkeit</div><p class="text-xs text-gray-500">Termine und Zusagen werden eingehalten.</p></div><div class="bg-white p-6"><div class="font-bold text-lung-800 text-sm mb-1">Innovation</div><p class="text-xs text-gray-500">Bewährte Technik, modern weiterentwickelt.</p></div><div class="bg-white p-6"><div class="font-bold text-lung-800 text-sm mb-1">Partnerschaft</div><p class="text-xs text-gray-500">Langfristige Beziehungen, keine Einmaltransaktionen.</p></div></div>
+  </div></section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     SERVICE
+════════════════════════════════════════════════════════ -->
+<div id="page-service" class="page fade-in">
+  <section class="bg-lung-900 py-20"><div class="max-w-7xl mx-auto px-6"><h1 class="text-4xl font-black text-white tracking-tight mb-4">Service & Wartung</h1><p class="text-lg text-lung-200 max-w-lg mb-8">Schnelle Reaktionszeiten. Eigene Techniker. Auch für Fremdanlagen.</p><button onclick="showPage('kontakt')" class="btn-cta">Service anfragen <i class="fas fa-arrow-right text-xs"></i></button></div></section>
+  <section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-px bg-gray-200 border border-gray-200">
+    <div class="bg-white p-8"><div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Prävention</div><h3 class="font-bold text-lung-800 mb-2">Regelmäßige Wartung</h3><p class="text-sm text-gray-500 leading-relaxed">Inspektion, Filterwechsel, Ventilatorkontrolle, Absaugleistungsmessung nach Wartungsplan.</p></div>
+    <div class="bg-white p-8"><div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Instandsetzung</div><h3 class="font-bold text-lung-800 mb-2">Reparatur</h3><p class="text-sm text-gray-500 leading-relaxed">Schnelle Diagnose und Reparatur durch eigene Techniker. Auch für Anlagen anderer Hersteller.</p></div>
+    <div class="bg-white p-8"><div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Versorgung</div><h3 class="font-bold text-lung-800 mb-2">Ersatzteile</h3><p class="text-sm text-gray-500 leading-relaxed">Filtermedien, Motoren, Schläuche, Armaturen — schnell geliefert, für LUNG- und Fremdanlagen.</p></div>
+    <div class="bg-white p-8"><div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-3">Notfall</div><h3 class="font-bold text-lung-800 mb-2">Notfallservice</h3><p class="text-sm text-gray-500 leading-relaxed">Bei ungeplanten Ausfällen: Telefonsupport und kurzfristiger Vor-Ort-Einsatz.</p></div>
+  </div></section>
+  <section class="bg-lung-800 py-14"><div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6"><div><h2 class="text-xl font-extrabold text-white tracking-tight">Service anfragen?</h2></div><button onclick="showPage('kontakt')" class="btn-cta flex-shrink-0">Kontakt aufnehmen <i class="fas fa-arrow-right text-xs"></i></button></div></section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     KARRIERE
+════════════════════════════════════════════════════════ -->
+<div id="page-karriere" class="page fade-in">
+  <section class="bg-lung-900 py-20"><div class="max-w-7xl mx-auto px-6"><h1 class="text-4xl font-black text-white tracking-tight mb-4">Karriere bei LUNG</h1><p class="text-lg text-lung-200 max-w-lg">Stabiler Arbeitgeber, echte Aufgaben, familiäre Atmosphäre.</p></div></section>
+  <section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+    <div>
+      <div class="kicker">Warum LUNG?</div>
+      <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-4">Handwerk mit Zukunft</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">LUNG ist kein Konzern. Kurze Wege, echtes Teamwork, faire Vergütung. Was erwartet Sie: vielseitige Aufgaben, modernes Werkzeug, ein Arbeitgeber, der Beständigkeit bietet.</p>
+      <div class="grid grid-cols-2 gap-2 text-sm"><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Sicherer Arbeitsplatz</div><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Familiäres Umfeld</div><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Vielseitige Aufgaben</div><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-lung-600"></div>Weiterbildung</div></div>
+    </div>
+    <img src="images/5.jpg" alt="LUNG Team" class="w-full h-72 object-cover" onerror="this.style.background='#1B3D6F'">
+  </div></section>
+  <section class="py-16 bg-lung-50 border-y border-gray-200"><div class="max-w-7xl mx-auto px-6">
+    <div class="kicker mb-3">Offene Stellen</div>
+    <h2 class="text-2xl font-extrabold text-lung-800 tracking-tight mb-8">Aktuell suchen wir</h2>
+    <div class="divide-y divide-gray-200 border-y border-gray-200">
+      <div class="flex flex-col md:flex-row md:items-center justify-between py-5 gap-3 bg-white px-5">
+        <div><div class="text-[11px] font-bold text-lung-400 uppercase tracking-widest">Technik</div><div class="font-bold text-lung-800 text-sm">Konstrukteur / Technischer Zeichner (m/w/d)</div><div class="text-xs text-gray-400 mt-0.5">Vollzeit · Wallersdorf</div></div>
+        <button onclick="showPage('kontakt')" class="btn-secondary text-xs py-2 px-4 flex-shrink-0">Bewerben</button>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between py-5 gap-3 bg-white px-5">
+        <div><div class="text-[11px] font-bold text-lung-400 uppercase tracking-widest">Montage</div><div class="font-bold text-lung-800 text-sm">Monteur für Lüftungsanlagen (m/w/d)</div><div class="text-xs text-gray-400 mt-0.5">Vollzeit · Reisebereitschaft</div></div>
+        <button onclick="showPage('kontakt')" class="btn-secondary text-xs py-2 px-4 flex-shrink-0">Bewerben</button>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between py-5 gap-3 bg-white px-5">
+        <div><div class="text-[11px] font-bold text-lung-400 uppercase tracking-widest">Vertrieb</div><div class="font-bold text-lung-800 text-sm">Projektleiter / Technischer Vertrieb (m/w/d)</div><div class="text-xs text-gray-400 mt-0.5">Vollzeit · Wallersdorf + Außendienst</div></div>
+        <button onclick="showPage('kontakt')" class="btn-secondary text-xs py-2 px-4 flex-shrink-0">Bewerben</button>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between py-5 gap-3 bg-white px-5">
+        <div><div class="text-[11px] font-bold text-lung-400 uppercase tracking-widest">Produktion</div><div class="font-bold text-lung-800 text-sm">Metallbauer / Schlosser / Schweißer (m/w/d)</div><div class="text-xs text-gray-400 mt-0.5">Vollzeit · Wallersdorf</div></div>
+        <button onclick="showPage('kontakt')" class="btn-secondary text-xs py-2 px-4 flex-shrink-0">Bewerben</button>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between py-5 gap-3 bg-white px-5">
+        <div><div class="text-[11px] font-bold text-lung-400 uppercase tracking-widest">Produktion</div><div class="font-bold text-lung-800 text-sm">Maschinenbediener / Montagehelfer (m/w/d)</div><div class="text-xs text-gray-400 mt-0.5">Vollzeit · Wallersdorf</div></div>
+        <button onclick="showPage('kontakt')" class="btn-secondary text-xs py-2 px-4 flex-shrink-0">Bewerben</button>
+      </div>
+    </div>
+    <div class="mt-8 bg-lung-800 p-8 text-center"><h3 class="text-lg font-bold text-white mb-2">Keine passende Stelle?</h3><p class="text-lung-200 text-sm mb-4">Initiativbewerbungen willkommen.</p><button onclick="showPage('kontakt')" class="btn-cta text-sm">Initiativ bewerben</button></div>
+  </div></section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     KONTAKT
+════════════════════════════════════════════════════════ -->
+<div id="page-kontakt" class="page fade-in">
+  <section class="bg-lung-900 py-16"><div class="max-w-7xl mx-auto px-6">
+    <div class="kicker light">Kontakt</div>
+    <h1 class="text-4xl font-black text-white tracking-tight mb-3">Sprechen wir über Ihr Projekt.</h1>
+    <p class="text-lung-200 max-w-lg">Kein Vertriebsdruck. Ein direktes Gespräch mit unseren Technikern.</p>
+  </div></section>
+  <section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-5 gap-12">
+    <div class="lg:col-span-3">
+      <h2 class="text-lg font-bold text-lung-800 mb-6">Anfrage senden</h2>
+      <form class="space-y-4" onsubmit="handleForm(event)">
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="block text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wider">Vorname *</label><input type="text" required class="w-full border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:border-lung-600 transition-colors"></div>
+          <div><label class="block text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wider">Nachname *</label><input type="text" required class="w-full border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:border-lung-600 transition-colors"></div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="block text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wider">Firma</label><input type="text" class="w-full border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:border-lung-600"></div>
+          <div><label class="block text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wider">E-Mail *</label><input type="email" required class="w-full border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:border-lung-600"></div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="block text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wider">Telefon</label><input type="tel" class="w-full border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:border-lung-600"></div>
+          <div><label class="block text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wider">Bereich</label>
+            <select class="w-full border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:border-lung-600 text-gray-600 bg-white">
+              <option value="">Bitte wählen</option><option>Entstaubungstechnik</option><option>Oberflächentechnik</option><option>Wärmerückgewinnung</option><option>Kabinenbau</option><option>Service / Wartung</option><option>Karriere / Bewerbung</option><option>Sonstiges</option>
+            </select>
+          </div>
+        </div>
+        <div><label class="block text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wider">Nachricht *</label><textarea rows="5" required class="w-full border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:border-lung-600 resize-none" placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Frage …"></textarea></div>
+        <div class="flex items-start gap-2"><input type="checkbox" required id="dsgvo" class="mt-1"><label for="dsgvo" class="text-xs text-gray-400">Ich stimme der Verarbeitung meiner Daten gemäß <a href="#" class="text-lung-600 underline">Datenschutzerklärung</a> zu.</label></div>
+        <button type="submit" class="btn-cta w-full justify-center py-3.5">Anfrage senden <i class="fas fa-arrow-right text-xs"></i></button>
+      </form>
+      <div id="form-success" class="hidden mt-6 border border-green-200 bg-green-50 p-6 text-center text-green-800"><div class="font-bold mb-1">Nachricht gesendet.</div><div class="text-sm">Wir melden uns innerhalb eines Werktages.</div></div>
+    </div>
+    <div class="lg:col-span-2 space-y-6">
+      <h2 class="text-lg font-bold text-lung-800 mb-2">Direktkontakt</h2>
+      <div class="space-y-4 text-sm">
+        <div><div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-1">Adresse</div><div class="text-gray-600">LUNG Lufttechnische Anlagen GmbH<br>Haidlfinger Straße 29<br>94522 Wallersdorf, Bayern</div></div>
+        <div><div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-1">Telefon</div><a href="tel:+499933953200" class="text-lung-600 font-semibold hover:underline">+49 9933 9532-0</a><div class="text-xs text-gray-400 mt-0.5">Mo–Fr 7:00–17:00 Uhr</div></div>
+        <div><div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-1">Fax</div><div class="text-gray-600">+49 9933 9532-50</div></div>
+        <div><div class="text-xs font-bold text-lung-400 uppercase tracking-widest mb-1">E-Mail</div><a href="mailto:fabian.fischer@lung-gmbh.de" class="text-lung-600 font-semibold hover:underline">fabian.fischer@lung-gmbh.de</a></div>
+      </div>
+      <div class="bg-lung-50 border border-gray-200 p-6 mt-6 flex items-center justify-center h-48"><div class="text-center text-gray-400 text-sm"><i class="fas fa-map text-2xl mb-2 block"></i>Google Maps<br><span class="text-xs">Haidlfinger Str. 29, 94522 Wallersdorf</span></div></div>
+    </div>
+  </div></section>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer class="bg-lung-950 text-white pt-14 pb-6">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8 mb-10 text-sm">
+      <div>
+        <div class="font-bold text-base mb-3">LUNG</div>
+        <p class="text-gray-500 text-xs leading-relaxed">Lufttechnische Anlagen GmbH<br>Haidlfinger Straße 29<br>94522 Wallersdorf, Bayern<br><br>+49 9933 9532-0<br>fabian.fischer@lung-gmbh.de</p>
+      </div>
+      <div>
+        <div class="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-3">Lösungen</div>
+        <ul class="space-y-1.5 text-gray-400 text-xs"><li><button onclick="showPage('entstaubung')" class="hover:text-white transition">Entstaubungstechnik</button></li><li><button onclick="showPage('oberflaeche')" class="hover:text-white transition">Oberflächentechnik</button></li><li><button onclick="showPage('waerme')" class="hover:text-white transition">Wärmerückgewinnung</button></li><li><button onclick="showPage('kabinen')" class="hover:text-white transition">Kabinenbau</button></li></ul>
+      </div>
+      <div>
+        <div class="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-3">Unternehmen</div>
+        <ul class="space-y-1.5 text-gray-400 text-xs"><li><button onclick="showPage('unternehmen')" class="hover:text-white transition">Über uns</button></li><li><button onclick="showPage('service')" class="hover:text-white transition">Service</button></li><li><button onclick="showPage('karriere')" class="hover:text-white transition">Karriere</button></li><li><button onclick="showPage('kontakt')" class="hover:text-white transition">Kontakt</button></li></ul>
+      </div>
+      <div>
+        <div class="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-3">Rechtliches</div>
+        <ul class="space-y-1.5 text-gray-400 text-xs"><li><a href="#" class="hover:text-white transition">Impressum</a></li><li><a href="#" class="hover:text-white transition">Datenschutz</a></li><li><a href="#" class="hover:text-white transition">AGB</a></li></ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-5 text-gray-600 text-xs flex flex-col md:flex-row justify-between gap-2">
+      <p>© 2026 LUNG Lufttechnische Anlagen GmbH · Alle Rechte vorbehalten</p>
+      <p>HRB 319 Landshut · USt-ID DE 811 279 124</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>{p.classList.remove('active','fade-in')});
+  const t=document.getElementById('page-'+id);
+  if(t){t.classList.add('active');requestAnimationFrame(()=>t.classList.add('fade-in'))}
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleFaq(btn){
+  const a=btn.nextElementSibling,i=btn.querySelector('i');
+  const isOpen=a.classList.contains('open');
+  document.querySelectorAll('.faq-answer').forEach(x=>x.classList.remove('open'));
+  document.querySelectorAll('.faq-toggle i').forEach(x=>{x.classList.remove('fa-minus');x.classList.add('fa-plus')});
+  if(!isOpen){a.classList.add('open');i.classList.remove('fa-plus');i.classList.add('fa-minus')}
+}
+function handleForm(e){e.preventDefault();document.getElementById('form-success').classList.remove('hidden');e.target.style.display='none'}
+</script>
+</body>
+</html>
